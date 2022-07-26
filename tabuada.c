@@ -2,15 +2,16 @@
 
 #include <stdio.h>
 
-int main()
-{
-    int valor1, mult
+int main() {
     
-    valor1 = 1;
+    //determinaçao das variaveis & entrada de dados
+    int tab, x, valor;
+    tab = 0;
     
-    while(valor1 <= 10){
-        mult = valor1 * 8;
-        printf("%d x %d", valor1);
-        valor1++;
-    }
+    printf("entre com um numero que deseja saber a tabuada:\t\t\t\n\n");
+    scanf("%d", &tab);
+    
+    //processamento de dados
+    for(valor = 1; valor <= 10; valor++)
+        printf("%d x %d = %d\n", tab, valor, tab * valor);
 }
