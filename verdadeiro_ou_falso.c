@@ -1,6 +1,7 @@
 /*implemente um programa que solicite duas variaveis inteiras e em seguida aplique todos os operadores realacionais aos inteiros lidos
 (sendo 1 - verdade ou 0 - falso)*/
-include <stdio.h>
+
+#include <stdio.h>
 
 int main() {
     //definicao de variaveis
