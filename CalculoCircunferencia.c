@@ -12,6 +12,6 @@ int main() {
     diametro = 2 * pi * raio;
     area = pi * (raio * raio);
     
-    printf("O perimetro do quadrado eh: %d\n", diametro);
-    printf("A area do quadrado eh: %d\n", area);
+    printf("O perimetro da circunferencia eh: %d\n", diametro);
+    printf("A area da circunferencia eh: %d\n", area);
 }
