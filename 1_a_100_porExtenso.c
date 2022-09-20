@@ -1,9 +1,7 @@
 //determinar os numeros de 1 a 100 e printa-lo por extenso
 #include <stdio.h>
 
-int
-main ()
-{
+int main(){
   int valor;
   int c, d, u;
 
@@ -12,23 +10,17 @@ main ()
 
   c = valor / 100;
   d = (valor % 100) / 10;
-  u = valor % 10;
+  u = (valor % 100) % 10;
 
-  switch (c)
-    {
+  switch (c){
       if (d == 1 && u == 1){
     case 1:
 	  printf ("cem");
 	  break;
 	}
 }
-
-      switch (d)
-	{
-	   if (d += 2)
-	    {
-	      printf ("e ");
-	    }
+      if (d != 1 && d!= 0){
+	    switch(d){	    
 	case 2:
 	      printf ("vinte");
 	      break;
@@ -52,9 +44,12 @@ main ()
 	      break;
 	case 9:
 	      printf ("noventa");
-	      break;
-	    }
-
+	      break;}
+	      
+	      printf (" e ");}
+		  
+		  
+	     if(d == 1){
 	  switch (u)
 	    {
 	    case 0:
@@ -87,9 +82,9 @@ main ()
 	    case 9:
 	      printf ("dezenove");
 	    }
-	    
-	  switch (u)
-	    {
+}
+     else{
+	  switch (u){
 	    case 1:
 	      printf ("um");
 	      break;
@@ -117,5 +112,5 @@ main ()
 	    case 9:
 	      printf ("nove");
 	      break;
-	    }
+	    }}
 	}
