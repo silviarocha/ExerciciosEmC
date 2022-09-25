@@ -4,18 +4,18 @@
 #include <stdio.h>
 
 int main(){
-	int cop1, np1, cop2, np2;
-	float vu1, vu2, valor1, valor2, valor_pago;
+	int codp1, nump1, codp2, nump2;
+	float vunit1, vunit2, valor1, valor2, total;
 	
-	scanf("%d%d%f", &cop1, &np1, &vu1);
-	scanf("%d%d%f", &cop2, &np2, &vu1);
+	scanf("%d%d%f", &codp1, &nump1, &vunit1);
+	scanf("%d%d%f", &codp2, &nump2, &vunit2);
 	
-	valor1 = (np1 + vu1);
-	valor2 = (np2 + vu2);
+	valor1 = nump1 * vunit1;
+	valor2 = nump2 * vunit2;
 	
-	valor_pago = valor1 + valor2;
+	total = valor1 + valor2;
 	
-	printf("VALOR A PAGAR = %f", valor_pago);
+	printf("VALOR A PAGAR: R$ %.2f\n", total);
 	
 	return 0;
 }
