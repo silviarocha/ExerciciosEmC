@@ -2,13 +2,14 @@
 
 int main(){
 	
-	int km, velocidade, tempo;
-	float litros;
+	int tempo, velocidade;
+  float litros, km;
+  
+  scanf("%d%d", &tempo, &velocidade);
+  
+	km = tempo*velocidade;
 	
-	scanf("%d%d", &velocidade, &tempo);
-
-	km = tempo/velocidade;
-	litros = km * 12;
+	litros = km/12;
 	
 	printf("%.3f\n", litros);
 	
