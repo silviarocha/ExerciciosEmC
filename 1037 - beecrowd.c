@@ -2,6 +2,7 @@
 O símbolo ( representa "maior que". Por exemplo:
 [0,25]  indica valores entre 0 e 25.0000, inclusive eles.
 (25,50] indica valores maiores que 25 Ex: 25.00001 até o valor 50.0000000*/
+
 #include <stdio.h>
 
 int main(){
@@ -9,13 +10,13 @@ int main(){
 
     scanf ("%f", &x);
     
-    if (x <= 25.00){
+    if (x <= 0 && x <= 25.00){
         printf ("Intervalo [0,25]\n", x);
-    } if ((x > 25.00) && (x <= 50.00)){
+    } else if (x > 25.00 && x <= 50.00){
         printf ("Intervalo (25,50]\n", x);
-    } if ((x > 50.00) && (x <= 75.00)){           // ha algumas incoerencias na estrutura de selecao
+    } else if (x > 50.00 && x <= 75.00){
         printf ("Intervalo (50,75]\n", x);
-    } if ((x > 75.00) && (x <= 100.00)){
+    } else if (x > 75.00 && x<= 100.00){
         printf ("Intervalo (75,100]\n", x);
     } else {
         printf ("Fora de intervalo\n");
