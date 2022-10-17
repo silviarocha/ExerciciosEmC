@@ -12,8 +12,8 @@ int main (){
 	
 	delta = pow(b,2) - 4*a*c;
 	
-	r1 = b*(-1) + sqrt(delta) / (2*a);
-	r2 = b*(-1) - sqrt(delta) / (2*a);
+	r1 = b*(-1) + sqrt(delta) / (2*a); //<= calculos errados, a saida da um numero diferente do esperado.
+	r2 = b*(-1) - sqrt(delta) / (2*a); //<= calculos errados, a saida da um numero diferente do esperado.
 	
 	if (delta > 0){
 	printf("R1 = %.5lf\n", r1);
