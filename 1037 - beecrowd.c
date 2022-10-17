@@ -10,7 +10,7 @@ int main(){
 
     scanf ("%f", &x);
     
-    if (x <= 0 && x <= 25.00){
+    if (x >= 0 && x <= 25.00){
         printf ("Intervalo [0,25]\n", x);
     } else if (x > 25.00 && x <= 50.00){
         printf ("Intervalo (25,50]\n", x);
